@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Nanum Pen';
+  src: url('./NanumFont/NanumPen.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum BarunPen';
+  src: url('./NanumFont/NanumBarunpenR.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: 'Nanum Brush';
+    src: url('./NanumFont/NanumBrush.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+article .container {
+  height: 99vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5em;
+
+  font-family: 'Nanum BarunPen';
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.neon-text{
+  color: #fff;
+  text-shadow:
+      0 0 13px rgb(255, 0, 85),
+      0 0 21px rgb(255, 0, 85),
+      0 0 42px rgb(255, 0, 85),
+      0 0 92px rgb(255, 0, 85),
+      0 0 102px rgb(255, 0, 85),
+      0 0 200px rgb(255, 0, 85);
+}

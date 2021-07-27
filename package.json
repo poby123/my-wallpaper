@@ -1,0 +1,40 @@
+{
+  "name": "my-wallpaper",
+  "version": "1.0.0",
+  "description": "Dynamic wall paper",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "nodemon --watch * --exec \"electron .\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder build"
+  },
+  "author": "Lee wonju",
+  "license": "MIT",
+  "build": {
+    "asar": true,
+    "appId": "com.my-wallpaper.electron-app",
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "devDependencies": {
+    "electron": "13.1.4",
+    "electron-builder": "22.11.7",
+    "nodemon": "2.0.12"
+  },
+  "dependencies": {
+    "auto-launch": "5.0.5"
+  }
+}
